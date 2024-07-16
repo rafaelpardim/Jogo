@@ -23,11 +23,11 @@ public class Board {
 		return columns;
 	}
 	
-	public Piece piece(int row, int colomun) {
+	public Piece piece(int rows, int colomun) {
 		if (!positionExists(rows, colomun)) {
 			throw new BoardException("Position not on the board");
 		}
-		return pieces [row][colomun];
+		return pieces [rows][colomun];
 	}
 	
 	public Piece piece(Position position) {
